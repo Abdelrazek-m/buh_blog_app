@@ -2,7 +2,6 @@ import 'package:buh_blog_app/core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class AppTextStyles {
-
   static TextStyle textStyle24 = TextStyle(
     color: AppColors.cBlackColor,
     fontSize: 24,
@@ -23,7 +22,7 @@ class AppTextStyles {
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w700,
   );
- 
+
   static TextStyle textStyle16 = TextStyle(
     color: AppColors.cWhiteColor,
     fontSize: 16,
