@@ -1,4 +1,5 @@
-import '/fetures/splash/presentation/view/splash_view.dart';
+import 'package:buh_blog_app/core/utils/routes.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,13 +11,13 @@ class BUHApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: RoutesApp.router,
+      debugShowCheckedModeBanner: false,
       title: 'BUH',
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: const SplashView(),
     );
   }
 }
-
