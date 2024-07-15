@@ -84,6 +84,7 @@ class _SignupViewBodyState extends State<SignupViewBody>
             height: 20,
           ),
             const CustomSignInButton(
+                route: RoutesApp.signInView,
               title: "Sign Up",
             ),
             const SizedBox(

@@ -1,7 +1,6 @@
 import 'package:buh_blog_app/core/constants/app_colors.dart';
 import 'package:buh_blog_app/core/constants/app_text_styles.dart';
 import 'package:buh_blog_app/core/utils/routes.dart';
-import 'package:buh_blog_app/features/auth/presentation/view/sign_up_view.dart';
 import 'package:buh_blog_app/features/auth/presentation/view/wedgits/custom_second_logo.dart';
 import 'package:buh_blog_app/features/auth/presentation/view/wedgits/custom_sigin_button.dart';
 import 'package:buh_blog_app/features/auth/presentation/view/wedgits/custom_text_field.dart';
@@ -24,8 +23,8 @@ class _SignInViewBodyState extends State<SignInViewBody>
   void initState() {
     super.initState();
     _animationController =
-        AnimationController(vsync: this, duration: Duration(seconds: 2));
-    slideAnimation = Tween(begin: Offset(0, -.3), end: Offset(0, 0))
+        AnimationController(vsync: this, duration: const Duration(seconds: 2));
+    slideAnimation = Tween(begin: const Offset(0, -.3), end: const Offset(0, 0))
         .animate(_animationController);
     _animationController.forward();
   }
@@ -63,6 +62,7 @@ class _SignInViewBodyState extends State<SignInViewBody>
                   height: 25,
                 ),
                 const CustomSignInButton(
+                  route: RoutesApp.profileView,
                   title: "Sign In",
                 ),
                 const SizedBox(
