@@ -25,7 +25,7 @@ class _SignupViewBodyState extends State<SignupViewBody>
     super.initState();
     _animationController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 2),
+      duration: const Duration(seconds: 1),
     );
     slidingAnimation = Tween(begin: const Offset(0,.51), end: const Offset(0, 0))
         .animate(_animationController);

@@ -1,10 +1,10 @@
- 
+// import 'package:buh_blog_app/core/utils/assets.dart';
 import 'package:buh_blog_app/features/profile/presentation/view/wedgit/custom_profile_user.dart';
-import 'package:buh_blog_app/features/profile/presentation/view/wedgit/listof_top_posts.dart';
-import 'package:buh_blog_app/features/profile/presentation/view/wedgit/more_button.dart';
-import 'package:buh_blog_app/features/profile/presentation/view/wedgit/title_of_posts.dart';
+import 'package:buh_blog_app/features/profile/presentation/view/wedgit/visitor_profile.dart';
+// import 'package:buh_blog_app/features/profile/presentation/view/wedgit/user_profile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 import 'package:flutter/widgets.dart';
 
 class ProfileViewBody extends StatelessWidget {
@@ -24,25 +24,7 @@ class ProfileViewBody extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          TitleOfPosts(
-            text: "Your Top Posts",
-          ),
-          ListOfTopPosts(),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TitleOfPosts(text: "Your Latest Posts"),
-              MoreButton(),
-            ],
-          ),
-          ListOfTopPosts(),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-            Text(""),
-              MoreButton(),
-            ],
-          ),
+          VisitorProfile()
         ],
       ),
     );

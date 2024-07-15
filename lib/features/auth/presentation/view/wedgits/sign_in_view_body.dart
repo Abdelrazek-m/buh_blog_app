@@ -23,8 +23,8 @@ class _SignInViewBodyState extends State<SignInViewBody>
   void initState() {
     super.initState();
     _animationController =
-        AnimationController(vsync: this, duration: const Duration(seconds: 2));
-    slideAnimation = Tween(begin: const Offset(0, -.3), end: const Offset(0, 0))
+        AnimationController(vsync: this, duration: const Duration(seconds: 1));
+    slideAnimation = Tween(begin: const Offset(0, -.2), end: const Offset(0, 0))
         .animate(_animationController);
     _animationController.forward();
   }

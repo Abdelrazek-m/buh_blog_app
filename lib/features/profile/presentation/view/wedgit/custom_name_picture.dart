@@ -1,6 +1,7 @@
 import 'package:buh_blog_app/core/constants/app_colors.dart';
 import 'package:buh_blog_app/core/constants/app_text_styles.dart';
 import 'package:buh_blog_app/core/utils/assets.dart';
+import 'package:buh_blog_app/features/profile/presentation/view/wedgit/custom_circle_pic.dart';
 import 'package:flutter/material.dart';
 
 class CustomNameAndPicture extends StatelessWidget {
@@ -10,18 +11,13 @@ class CustomNameAndPicture extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return   Row(
       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Container(
-          margin:
-              const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-          height: 70,
-          width: 70,
-          child: const CircleAvatar(
-            backgroundImage: AssetImage(AssetsData.profilepic),
-          ),
-        ),
+          const CustomCirclePicture(
+            horizontal: 14,
+            vertical: 12,
+            height: 70,width: 70,picture: AssetsData.profilepic,),
         Column(
           children: [
             Text(
@@ -61,3 +57,4 @@ class CustomNameAndPicture extends StatelessWidget {
     );
   }
 }
+
